@@ -381,8 +381,16 @@ textarea {
 /* =============
     Section 4
 ============= */
-#s4 img {
-  width: 100%; }
+#s4 {
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  grid-template-areas: ". section-5 ."; }
+  #s4 ul {
+    grid-area: section-5;
+    display: grid;
+    gap: 20px; }
+    #s4 ul li img {
+      width: 100%; }
 
 /* =============
     Section 5

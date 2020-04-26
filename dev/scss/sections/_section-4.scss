@@ -4,7 +4,19 @@
 
 #s4{
 
-    img{
-        width: 100%;
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-areas: ". section-5 .";
+
+    ul{
+        grid-area: section-5;
+        display: grid;
+        gap: 20px;
+
+        li{
+            img{
+                width: 100%;
+            }
+        }
     }
 }
