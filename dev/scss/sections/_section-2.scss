@@ -3,7 +3,19 @@
 ============= */
 
 #s2{
-    img{
-        width: 100%;
+    aside{
+        img{
+            width: 100%;
+        }
+    }
+
+    #s2_text{
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-areas: ". section-2 .";
+    }
+
+    article{
+        grid-area: section-2;
     }
 }

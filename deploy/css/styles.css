@@ -356,8 +356,16 @@ textarea {
 /* =============
     Section 2
 ============= */
-#s2 img {
+#s2 aside img {
   width: 100%; }
+
+#s2 #s2_text {
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  grid-template-areas: ". section-2 ."; }
+
+#s2 article {
+  grid-area: section-2; }
 
 /* =============
     Section 3
