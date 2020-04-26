@@ -3,5 +3,14 @@
 ============= */
 
 #s5{
-    
+
+    #s5_text{
+        display: grid;
+        grid-template-columns: 20px auto 20px;
+        grid-template-areas: ". section-5 .";
+
+        article{
+            grid-area: section-5;
+        }
+    }
 }

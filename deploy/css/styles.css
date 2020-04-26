@@ -384,9 +384,9 @@ textarea {
 #s4 {
   display: grid;
   grid-template-columns: 20px auto 20px;
-  grid-template-areas: ". section-5 ."; }
+  grid-template-areas: ". section-4 ."; }
   #s4 ul {
-    grid-area: section-5;
+    grid-area: section-4;
     display: grid;
     gap: 20px; }
     #s4 ul li img {
@@ -395,3 +395,9 @@ textarea {
 /* =============
     Section 5
 ============= */
+#s5 #s5_text {
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  grid-template-areas: ". section-5 ."; }
+  #s5 #s5_text article {
+    grid-area: section-5; }
