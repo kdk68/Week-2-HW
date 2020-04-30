@@ -373,7 +373,7 @@ textarea {
   grid-template-areas: ". section-2 ."; }
   #s2 #s2_content {
     grid-area: section-2; }
-    #s2 #s2_content img {
+    #s2 #s2_content aside img {
       width: 100%; }
 
 /* =============
