@@ -413,12 +413,28 @@ textarea {
   display: grid;
   grid-template-columns: 20px auto 20px;
   grid-template-areas: ". section-4 ."; }
+  @media (min-width: 1200px) {
+    #s4 {
+      grid-template-columns: auto 1200px auto; } }
   #s4 ul {
     grid-area: section-4;
     display: grid;
     gap: 20px; }
+    @media (min-width: 768px) {
+      #s4 ul {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "g2 g1 g1" "g3 g1 g1"; } }
+    @media (min-width: 992px) {
+      #s4 ul {
+        grid-template-areas: "g1 g1 g2" "g1 g1 g3"; } }
     #s4 ul li img {
       width: 100%; }
+    #s4 ul #g1 {
+      grid-area: g1; }
+    #s4 ul #g2 {
+      grid-area: g2; }
+    #s4 ul #g3 {
+      grid-area: g3; }
 
 /* =============
     Section 5
