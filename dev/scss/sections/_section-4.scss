@@ -37,15 +37,21 @@
         }
 
         #g1{
-            grid-area: g1;
+            @include md{
+                grid-area: g1;
+            }
         }
 
         #g2{
-            grid-area: g2;
+            @include md{
+                grid-area: g2;
+            }
         }
 
         #g3{
-            grid-area: g3;
+            @include md{
+                grid-area: g3;
+            }
         }
     }
 }

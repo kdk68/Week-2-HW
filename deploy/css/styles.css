@@ -432,13 +432,15 @@ textarea {
         grid-template-areas: "g1 g1 g2" "g1 g1 g3"; } }
     #s4 ul li img {
       width: 100%; }
-    #s4 ul #g1 {
-      grid-area: g1; }
-    #s4 ul #g2 {
-      grid-area: g2; }
-    #s4 ul #g3 {
-      grid-area: g3; }
-
+    @media (min-width: 768px) {
+      #s4 ul #g1 {
+        grid-area: g1; } }
+    @media (min-width: 768px) {
+      #s4 ul #g2 {
+        grid-area: g2; } }
+    @media (min-width: 768px) {
+      #s4 ul #g3 {
+        grid-area: g3; } }
 /* =============
     Section 5
 ============= */
