@@ -357,9 +357,9 @@ textarea {
 ============= */
 #s1 {
   background-image: url("../img/section-1/hero.jpg");
-  background-size: cover;
   background-position: center;
   background-repeat: none;
+  background-size: cover;
   height: 30vh; }
   @media (min-width: 768px) {
     #s1 {
@@ -377,20 +377,20 @@ textarea {
 @media (min-width: 768px) {
   #s2 {
     display: grid;
-    grid-template-columns: 10px auto 10px;
-    grid-template-areas: ". s2-content ."; } }
+    grid-template-areas: ". s2-content .";
+    grid-template-columns: 10px auto 10px; } }
 
 @media (min-width: 992px) {
   #s2 {
     display: grid;
-    grid-template-columns: 0px auto 0px;
-    grid-template-areas: ". s2-content ."; } }
+    grid-template-areas: ". s2-content .";
+    grid-template-columns: 0px auto 0px; } }
 
 @media (min-width: 1200px) {
   #s2 {
     display: grid;
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". s2-content ."; } }
+    grid-template-areas: ". s2-content .";
+    grid-template-columns: auto 1200px auto; } }
 
 #s2 #s2-content {
   grid-area: s2-content; }
@@ -404,10 +404,10 @@ textarea {
       grid-template-columns: 45% auto; } }
   #s2 #s2-content aside {
     background-image: url("../img/section-2/believe-left.jpg");
-    height: 30vh;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-repeat: no-repeat; }
+    height: 30vh; }
     @media (min-width: 768px) {
       #s2 #s2-content aside {
         background-position: -260px 0px;
@@ -418,8 +418,8 @@ textarea {
         height: 60vh; } }
   #s2 #s2-content #s2-container {
     display: grid;
-    grid-template-columns: 20px auto 20px;
-    grid-template-areas: ". s2-text ."; }
+    grid-template-areas: ". s2-text .";
+    grid-template-columns: 20px auto 20px; }
     #s2 #s2-content #s2-container #s2-text {
       grid-area: s2-text; }
 
@@ -428,9 +428,9 @@ textarea {
 ============= */
 #s3 {
   background-image: url("../img/section-3/hero2.jpg");
-  background-size: cover;
   background-position: center;
   background-repeat: none;
+  background-size: cover;
   height: 30vh; }
   @media (min-width: 768px) {
     #s3 {
@@ -446,8 +446,8 @@ textarea {
 ============= */
 #s4 {
   display: grid;
-  grid-template-columns: 20px auto 20px;
-  grid-template-areas: ". section-4 ."; }
+  grid-template-areas: ". section-4 .";
+  grid-template-columns: 20px auto 20px; }
   @media (min-width: 1200px) {
     #s4 {
       grid-template-columns: auto 1200px auto; } }
@@ -459,40 +459,50 @@ textarea {
 ============= */
 #s5 {
   display: grid;
-  grid-template-columns: 20px auto 20px;
-  grid-template-areas: ". section-5 ."; }
+  grid-template-areas: ". section-5 .";
+  grid-template-columns: 20px auto 20px; }
   @media (min-width: 1200px) {
     #s5 {
       grid-template-columns: auto 1200px auto; } }
   #s5 ul {
-    grid-area: section-5;
     display: grid;
-    gap: 20px; }
+    gap: 20px;
+    grid-area: section-5;
+    grid-template-rows: repeat(3, 247px); }
     @media (min-width: 768px) {
       #s5 ul {
+        grid-template-areas: "g2 g1 g1" "g3 g1 g1";
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: "g2 g1 g1" "g3 g1 g1"; } }
+        grid-template-rows: repeat(2, 220px); } }
     @media (min-width: 992px) {
       #s5 ul {
-        grid-template-areas: "g1 g1 g2" "g1 g1 g3"; } }
-    #s5 ul li img {
-      width: 100%; }
-    @media (min-width: 768px) {
-      #s5 ul #g1 {
-        grid-area: g1; } }
-    @media (min-width: 768px) {
-      #s5 ul #g2 {
-        grid-area: g2; } }
-    @media (min-width: 768px) {
-      #s5 ul #g3 {
-        grid-area: g3; } }
+        grid-template-areas: "g1 g1 g2" "g1 g1 g3";
+        grid-template-rows: repeat(2, 340px); } }
+    #s5 ul li {
+      background-position: center;
+      background-size: cover; }
+    #s5 ul #g1 {
+      background-image: url("../img/section-5/gallery1.png"); }
+      @media (min-width: 768px) {
+        #s5 ul #g1 {
+          grid-area: g1; } }
+    #s5 ul #g2 {
+      background-image: url("../img/section-5/gallery2.png"); }
+      @media (min-width: 768px) {
+        #s5 ul #g2 {
+          grid-area: g2; } }
+    #s5 ul #g3 {
+      background-image: url("../img/section-5/gallery3.png"); }
+      @media (min-width: 768px) {
+        #s5 ul #g3 {
+          grid-area: g3; } }
 /* =============
     Section 6
 ============= */
 #s6 {
   display: grid;
-  grid-template-columns: 20px auto 20px;
-  grid-template-areas: ". section-6 ."; }
+  grid-template-areas: ". section-6 .";
+  grid-template-columns: 20px auto 20px; }
   @media (min-width: 992px) {
     #s6 {
       grid-template-columns: auto 900px auto; } }

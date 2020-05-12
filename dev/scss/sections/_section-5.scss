@@ -1,55 +1,61 @@
 /* =============
     Section 5
 ============= */
-
-#s5{
+#s5 {
     display: grid;
-    grid-template-columns: 20px auto 20px;
     grid-template-areas: ". section-5 .";
+    grid-template-columns: 20px auto 20px;
 
-    @include xl{
+    @include xl {
         grid-template-columns: auto 1200px auto;
     }
 
-    ul{
-        grid-area: section-5;
+    ul {
         display: grid;
         gap: 20px;
+        grid-area: section-5;
+        grid-template-rows: repeat(3, 247px);
 
-        @include md{
+        @include md {
+            grid-template-areas: 
+                "g2 g1 g1"
+                "g3 g1 g1";
             grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 220px);
+        }
 
+        @include lg {
             grid-template-areas: 
-            "g2 g1 g1"
-            "g3 g1 g1";
+                "g1 g1 g2"
+                "g1 g1 g3";
+            grid-template-rows: repeat(2, 340px);
         }
 
-        @include lg{
-            grid-template-areas: 
-            "g1 g1 g2"
-            "g1 g1 g3";
+        li {
+            background-position: center;
+            background-size: cover;
         }
 
-        li{
-            img{
-                width: 100%;
-            }
-        }
+        #g1 {
+            background-image: url("../img/section-5/gallery1.png");
 
-        #g1{
-            @include md{
+            @include md {
                 grid-area: g1;
             }
         }
 
-        #g2{
-            @include md{
+        #g2 {
+            background-image: url("../img/section-5/gallery2.png");
+
+            @include md {
                 grid-area: g2;
             }
         }
 
-        #g3{
-            @include md{
+        #g3 {
+            background-image: url("../img/section-5/gallery3.png");
+
+            @include md {
                 grid-area: g3;
             }
         }

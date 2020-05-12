@@ -1,63 +1,62 @@
 /* =============
     Section 2
 ============= */
-
-#s2{
-    @include md{
+#s2 {
+    @include md {
         display: grid;
+        grid-template-areas: ". s2-content .";
         grid-template-columns: 10px auto 10px;
-        grid-template-areas: ". s2-content .";
     }
 
-    @include lg{
+    @include lg {
         display: grid;
+        grid-template-areas: ". s2-content .";
         grid-template-columns: 0px auto 0px;
-        grid-template-areas: ". s2-content .";
     }
 
-    @include xl{
+    @include xl {
         display: grid;
-        grid-template-columns: auto 1200px auto;
         grid-template-areas: ". s2-content .";
+        grid-template-columns: auto 1200px auto;
     }
 
-    #s2-content{
+    #s2-content {
         grid-area: s2-content;
-        
-        @include md{
+
+        @include md {
             display: grid;
             grid-template-columns: 50% auto;
         }
 
-        @include lg{
+        @include lg {
             display: grid;
             grid-template-columns: 45% auto;
         }
 
-        aside{
+        aside {
             background-image: url("../img/section-2/believe-left.jpg");
-            height: 30vh;
             background-position: center;
-            background-size: cover;
             background-repeat: no-repeat;
+            background-size: cover;
+            height: 30vh;
 
-            @include md{
+            @include md {
                 background-position: -260px 0px;
                 height: 50vh;
             }
 
-            @include lg{
+            @include lg {
                 background-position: -420px 0px;
                 height: 60vh;
             }
         }
 
-        #s2-container{
+        #s2-container {
             display: grid;
-            grid-template-columns: 20px auto 20px;
             grid-template-areas: ". s2-text .";
+            grid-template-columns: 20px auto 20px;
 
-            #s2-text{
+            #s2-text {
                 grid-area: s2-text;
             }
         }
