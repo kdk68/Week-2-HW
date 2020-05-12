@@ -228,6 +228,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/section-2/believe-left-web.png": {
+		"ft": 32768,
+		"iS": 613288,
+		"oA": 0,
+		"oAP": "/deploy/img/section-2/believe-left-web.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-2/believe-left.jpg": {
+		"ft": 16384,
+		"iS": 166658,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-2/believe-left.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/deploy/img/section-2/believe-left.png": {
 		"ft": 32768,
 		"iS": 655269,

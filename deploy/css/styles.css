@@ -377,7 +377,13 @@ textarea {
 @media (min-width: 768px) {
   #s2 {
     display: grid;
-    grid-template-columns: 20px auto 20px;
+    grid-template-columns: 10px auto 10px;
+    grid-template-areas: ". s2-content ."; } }
+
+@media (min-width: 992px) {
+  #s2 {
+    display: grid;
+    grid-template-columns: 0px auto 0px;
     grid-template-areas: ". s2-content ."; } }
 
 @media (min-width: 1200px) {
@@ -391,9 +397,25 @@ textarea {
   @media (min-width: 768px) {
     #s2 #s2-content {
       display: grid;
-      grid-template-columns: 40% auto; } }
-  #s2 #s2-content aside img {
-    width: 100%; }
+      grid-template-columns: 50% auto; } }
+  @media (min-width: 992px) {
+    #s2 #s2-content {
+      display: grid;
+      grid-template-columns: 45% auto; } }
+  #s2 #s2-content aside {
+    background-image: url("../img/section-2/believe-left.jpg");
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    @media (min-width: 768px) {
+      #s2 #s2-content aside {
+        background-position: -260px 0px;
+        height: 50vh; } }
+    @media (min-width: 992px) {
+      #s2 #s2-content aside {
+        background-position: -420px 0px;
+        height: 60vh; } }
   #s2 #s2-content #s2-container {
     display: grid;
     grid-template-columns: 20px auto 20px;
