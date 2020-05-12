@@ -3,8 +3,6 @@
 ============= */
 #s2 {
 
-    margin: 15px 10px 25px 10px;
-
     @include md {
         display: grid;
         grid-template-areas: ". s2-content .";
@@ -66,6 +64,19 @@
 
             #s2-text {
                 grid-area: s2-text;
+
+                h3{
+                    color: $purple;
+                }
+
+                em{
+                    color: $l-purple;
+                    margin-top: 10px;
+
+                    @include lg{
+                        margin-top: 12px;
+                    }
+                }
             }
         }
     }
