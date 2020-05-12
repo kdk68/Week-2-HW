@@ -360,8 +360,7 @@ textarea {
   background-size: cover;
   background-position: center;
   background-repeat: none;
-  height: 30vh;
-  border: 1px solid red; }
+  height: 30vh; }
   @media (min-width: 768px) {
     #s1 {
       height: 50vh; } }
@@ -405,6 +404,21 @@ textarea {
 /* =============
     Section 3
 ============= */
+#s3 {
+  background-image: url("../img/section-3/hero2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  height: 30vh; }
+  @media (min-width: 768px) {
+    #s3 {
+      height: 50vh; } }
+  @media (min-width: 992px) {
+    #s3 {
+      height: 60vh; } }
+  @media (min-width: 1200px) {
+    #s3 {
+      height: 60vh; } }
 /* =============
     Section 4
 ============= */

@@ -1,3 +1,24 @@
 /* =============
     Section 3
 ============= */
+
+#s3{
+
+    background-image: url("../img/section-3/hero2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    height: 30vh;
+
+    @include md{
+        height: 50vh;
+    }
+
+    @include lg{
+        height: 60vh;
+    }
+
+    @include xl{
+        height: 60vh;
+    }
+}
