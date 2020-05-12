@@ -323,8 +323,16 @@ ul {
     list-style: none; }
 
 .content-margins {
-  margin: 15px 0px; }
-
+  margin-top: 15px; }
+  @media (min-width: 768px) {
+    .content-margins {
+      margin-top: 40px; } }
+  @media (min-width: 992px) {
+    .content-margins {
+      margin-top: 30px; } }
+  @media (min-width: 1200px) {
+    .content-margins {
+      margin-top: 40px; } }
 /* =============
     Typography
 ============= */

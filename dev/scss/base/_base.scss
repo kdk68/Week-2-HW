@@ -11,5 +11,17 @@ ul{
 }
 
 .content-margins{
-    margin: 15px 0px;
+    margin-top: 15px;
+
+    @include md{
+        margin-top: 40px;
+    }
+
+    @include lg{
+        margin-top: 30px;
+    }
+
+    @include xl{
+        margin-top: 40px;
+    }
 }
