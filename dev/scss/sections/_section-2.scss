@@ -2,6 +2,9 @@
     Section 2
 ============= */
 #s2 {
+
+    margin: 15px 10px 25px 10px;
+
     @include md {
         display: grid;
         grid-template-areas: ". s2-content .";
@@ -26,6 +29,7 @@
         @include md {
             display: grid;
             grid-template-columns: 50% auto;
+            grid-template-areas: "s2-image s2-container";
         }
 
         @include lg {
@@ -33,7 +37,9 @@
             grid-template-columns: 45% auto;
         }
 
+        
         aside {
+            grid-area: s2-image;
             background-image: url("../img/section-2/believe-left.jpg");
             background-position: center;
             background-repeat: no-repeat;
@@ -50,8 +56,10 @@
                 height: 60vh;
             }
         }
+        
 
         #s2-container {
+            grid-area: s2-container;
             display: grid;
             grid-template-areas: ". s2-text .";
             grid-template-columns: 20px auto 20px;

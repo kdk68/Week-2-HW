@@ -322,9 +322,16 @@ ul {
   ul li {
     list-style: none; }
 
+.content-margins {
+  margin: 15px 0px; }
+
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0; }
+
 /* =============
     Buttons
 ============= */
@@ -374,54 +381,56 @@ textarea {
 /* =============
     Section 2
 ============= */
-@media (min-width: 768px) {
-  #s2 {
-    display: grid;
-    grid-template-areas: ". s2-content .";
-    grid-template-columns: 10px auto 10px; } }
-
-@media (min-width: 992px) {
-  #s2 {
-    display: grid;
-    grid-template-areas: ". s2-content .";
-    grid-template-columns: 0px auto 0px; } }
-
-@media (min-width: 1200px) {
-  #s2 {
-    display: grid;
-    grid-template-areas: ". s2-content .";
-    grid-template-columns: auto 1200px auto; } }
-
-#s2 #s2-content {
-  grid-area: s2-content; }
+#s2 {
+  margin: 15px 10px 25px 10px; }
   @media (min-width: 768px) {
-    #s2 #s2-content {
+    #s2 {
       display: grid;
-      grid-template-columns: 50% auto; } }
+      grid-template-areas: ". s2-content .";
+      grid-template-columns: 10px auto 10px; } }
   @media (min-width: 992px) {
-    #s2 #s2-content {
+    #s2 {
       display: grid;
-      grid-template-columns: 45% auto; } }
-  #s2 #s2-content aside {
-    background-image: url("../img/section-2/believe-left.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 30vh; }
+      grid-template-areas: ". s2-content .";
+      grid-template-columns: 0px auto 0px; } }
+  @media (min-width: 1200px) {
+    #s2 {
+      display: grid;
+      grid-template-areas: ". s2-content .";
+      grid-template-columns: auto 1200px auto; } }
+  #s2 #s2-content {
+    grid-area: s2-content; }
     @media (min-width: 768px) {
-      #s2 #s2-content aside {
-        background-position: -260px 0px;
-        height: 50vh; } }
+      #s2 #s2-content {
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "s2-image s2-container"; } }
     @media (min-width: 992px) {
-      #s2 #s2-content aside {
-        background-position: -420px 0px;
-        height: 60vh; } }
-  #s2 #s2-content #s2-container {
-    display: grid;
-    grid-template-areas: ". s2-text .";
-    grid-template-columns: 20px auto 20px; }
-    #s2 #s2-content #s2-container #s2-text {
-      grid-area: s2-text; }
+      #s2 #s2-content {
+        display: grid;
+        grid-template-columns: 45% auto; } }
+    #s2 #s2-content aside {
+      grid-area: s2-image;
+      background-image: url("../img/section-2/believe-left.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 30vh; }
+      @media (min-width: 768px) {
+        #s2 #s2-content aside {
+          background-position: -260px 0px;
+          height: 50vh; } }
+      @media (min-width: 992px) {
+        #s2 #s2-content aside {
+          background-position: -420px 0px;
+          height: 60vh; } }
+    #s2 #s2-content #s2-container {
+      grid-area: s2-container;
+      display: grid;
+      grid-template-areas: ". s2-text .";
+      grid-template-columns: 20px auto 20px; }
+      #s2 #s2-content #s2-container #s2-text {
+        grid-area: s2-text; }
 
 /* =============
     Section 3
