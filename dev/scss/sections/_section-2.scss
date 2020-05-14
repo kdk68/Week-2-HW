@@ -62,6 +62,12 @@
             #s2-text {
                 grid-area: s2-text;
 
+                hr{
+                    height: 2px;
+                    background-color: $l-blue;
+                    border: none;
+                }
+
                 h3 {
                     color: $purple;
                     font-size: rem-calc(24);

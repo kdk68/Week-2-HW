@@ -547,6 +547,10 @@ header {
     grid-template-columns: 20px auto 20px; }
     #s2 #s2-content #s2-container #s2-text {
       grid-area: s2-text; }
+      #s2 #s2-content #s2-container #s2-text hr {
+        height: 2px;
+        background-color: #80B1C0;
+        border: none; }
       #s2 #s2-content #s2-container #s2-text h3 {
         color: #482D3D;
         font-size: 1.5rem;
@@ -607,6 +611,10 @@ header {
     grid-area: section-4; }
     #s4 #s4-content #s4-text {
       text-align: center; }
+      #s4 #s4-content #s4-text hr {
+        border: none;
+        height: 2px;
+        background-color: #80B1C0; }
       #s4 #s4-content #s4-text h2 {
         font-size: 1.5rem;
         font-weight: 800; }

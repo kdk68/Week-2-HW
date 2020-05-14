@@ -17,6 +17,12 @@
         #s4-text {
             text-align: center;
 
+            hr{
+                border: none;
+                height: 2px;
+                background-color: $l-blue;
+            }
+
             h2 {
                 font-size: rem-calc(24);
                 font-weight: 800;
