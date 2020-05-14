@@ -377,6 +377,29 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  height: 100%;
+  text-align: right; }
+  @media (min-width: 992px) {
+    #nav-container ul {
+      display: flex;
+      justify-content: flex-end; } }
+  #nav-container ul li {
+    margin-bottom: 20px; }
+    @media (min-width: 992px) {
+      #nav-container ul li {
+        align-items: center;
+        display: flex;
+        margin: 0px 30px 0 0; } }
+    #nav-container ul li a:link,
+    #nav-container ul li a:visited {
+      color: #80B1C0;
+      text-decoration: none;
+      transition: 0.25s; }
+    #nav-container ul li a:hover,
+    #nav-container ul li a:active {
+      color: #482D3D; }
+
 /* =============
     Header
 ============= */
@@ -422,25 +445,27 @@ header {
 ============= */
 #footer {
   background-color: #80B1C0;
-  display: grid;
-  grid-template-columns: 20px auto 20px;
-  grid-template-areas: ". footer ."; }
+  text-align: center;
+  padding: 10px; }
   #footer ul {
-    grid-area: footer;
     display: flex;
     justify-content: center;
     align-content: center; }
     #footer ul li {
-      margin: 0px 15px;
-      font-size: 2.25rem; }
-      @media (min-width: 768px) {
-        #footer ul li {
-          margin: 0px 20px;
-          font-size: 3.8125rem; } }
-      @media (min-width: 992px) {
-        #footer ul li {
-          margin: 0px 35px;
-          font-size: 4.375rem; } }
+      margin: 0px 15px; }
+      #footer ul li a:link, #footer ul li a:visited {
+        font-size: 1.625rem;
+        color: #904F6F;
+        transition: 0.25s; }
+        @media (min-width: 768px) {
+          #footer ul li a:link, #footer ul li a:visited {
+            font-size: 3.8125rem; } }
+        @media (min-width: 992px) {
+          #footer ul li a:link, #footer ul li a:visited {
+            font-size: 4.375rem; } }
+      #footer ul li a:hover, #footer ul li a:active {
+        color: #482D3D; }
+
 /* =============
     Section 1
 ============= */
