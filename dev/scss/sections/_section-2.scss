@@ -2,7 +2,6 @@
     Section 2
 ============= */
 #s2 {
-
     @include md {
         display: grid;
         grid-template-areas: ". s2-content .";
@@ -26,8 +25,8 @@
 
         @include md {
             display: grid;
-            grid-template-columns: 50% auto;
             grid-template-areas: "s2-image s2-container";
+            grid-template-columns: 50% auto;
         }
 
         @include lg {
@@ -35,13 +34,12 @@
             grid-template-columns: 45% auto;
         }
 
-        
         aside {
-            grid-area: s2-image;
             background-image: url("../img/section-2/believe-left.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            grid-area: s2-image;
             height: 30vh;
 
             @include md {
@@ -54,46 +52,46 @@
                 height: 60vh;
             }
         }
-        
 
         #s2-container {
-            grid-area: s2-container;
             display: grid;
+            grid-area: s2-container;
             grid-template-areas: ". s2-text .";
             grid-template-columns: 20px auto 20px;
 
             #s2-text {
                 grid-area: s2-text;
 
-                h3{
+                h3 {
                     color: $purple;
-                    font-weight: 700;
                     font-size: rem-calc(24);
+                    font-weight: 700;
                     text-align: center;
 
-                    @include md{
+                    @include md {
                         font-size: rem-calc(32);
                         text-align: left;
                     }
 
-                    @include lg{
+                    @include lg {
                         font-size: rem-calc(36);
                     }
                 }
 
-                p{
+                p {
                     color: $l-purple;
-                    margin-top: 10px;
-                    font-weight: 500;
                     font-size: rem-calc(18);
                     font-style: italic;
+                    font-weight: 500;
+                    margin-top: 10px;
                     text-align: center;
 
-                    @include md{
+                    @include md {
                         font-size: rem-calc(20);
                         text-align: left;
                     }
-                    @include lg{
+
+                    @include lg {
                         font-size: rem-calc(24);
                         margin-top: 12px;
                     }

@@ -11,17 +11,17 @@
     }
 
     #s4-content {
-        grid-area: section-4;
         color: $purple;
+        grid-area: section-4;
 
-        #s4-text{
+        #s4-text {
             text-align: center;
 
-            h2{
-                font-weight: 800;
+            h2 {
                 font-size: rem-calc(24);
+                font-weight: 800;
 
-                @include md{
+                @include md {
                     font-size: rem-calc(60);
                 }
             }
