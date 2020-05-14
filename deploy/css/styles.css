@@ -391,8 +391,19 @@ textarea {
   #footer ul {
     grid-area: footer;
     display: flex;
-    justify-content: center; }
-
+    justify-content: center;
+    align-content: center; }
+    #footer ul li {
+      margin: 0px 15px;
+      font-size: 2.25rem; }
+      @media (min-width: 768px) {
+        #footer ul li {
+          margin: 0px 20px;
+          font-size: 3.8125rem; } }
+      @media (min-width: 992px) {
+        #footer ul li {
+          margin: 0px 35px;
+          font-size: 4.375rem; } }
 /* =============
     Section 1
 ============= */
