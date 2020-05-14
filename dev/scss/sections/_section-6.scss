@@ -14,6 +14,42 @@
         grid-area: section-6;
         color: $l-purple;
 
+        @include lg{
+            display: grid;
+            grid-template-columns: 40% auto;
+            grid-template-areas: "s6-image s6-text";
+        }
+
+        #s6-hero{
+            grid-area: s6-image;
+
+            >div{
+                height: 144px;
+                width: 144px;
+                background-image: url("../img/section-6/IMG_0301.JPG");
+                background-size: cover;
+                background-position: center;
+                border-radius: 100%;
+                margin: 16px auto 30px;
+
+                @include md{
+                    height: 268px;
+                    width: 268px;
+                    margin: 15px auto 100px;
+                }
+
+                @include lg{
+                    height: 318px;
+                    width: 318px;
+                }
+            }
+        }
+        #s6-text{
+            grid-area: s6-text;
+        }
+
+        
+
         p{
             font-weight: 400;
             font-size: rem-calc(16);

@@ -5,14 +5,8 @@ header {
     background-color: $white;
     left: 0;
     position: fixed;
-    bottom: 0;
+    top: 0;
     width: 100%;
-
-    @include md{
-        left: 0;
-        position: fixed;
-        top: 0;
-    }
 
     >div {
         display: grid;
@@ -47,7 +41,7 @@ header {
         }
 
         #nav-container {
-            background-color: $light-grey;
+            background-color: $l-blue;
             display: none;
             grid-area: nav;
             padding: 20px;

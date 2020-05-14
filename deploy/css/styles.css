@@ -380,6 +380,43 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  background-color: #fff;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  header > div {
+    display: grid;
+    grid-template-areas: "logo burger" "nav nav";
+    grid-template-columns: 80% auto; }
+    @media (min-width: 992px) {
+      header > div {
+        grid-template-areas: "logo nav";
+        grid-template-columns: 20% auto; } }
+    header > div #logo-container {
+      grid-area: logo;
+      padding: 20px; }
+    header > div #burger-container {
+      align-items: center;
+      display: flex;
+      grid-area: burger;
+      justify-content: flex-end;
+      padding: 20px; }
+      @media (min-width: 992px) {
+        header > div #burger-container {
+          display: none !important; } }
+      header > div #burger-container i {
+        cursor: pointer; }
+    header > div #nav-container {
+      background-color: #80B1C0;
+      display: none;
+      grid-area: nav;
+      padding: 20px; }
+      @media (min-width: 992px) {
+        header > div #nav-container {
+          background-color: #fff;
+          display: block !important; } }
 /* =============
     Footer
 ============= */
@@ -598,6 +635,32 @@ textarea {
   #s6 #s6_content {
     grid-area: section-6;
     color: #904F6F; }
+    @media (min-width: 992px) {
+      #s6 #s6_content {
+        display: grid;
+        grid-template-columns: 40% auto;
+        grid-template-areas: "s6-image s6-text"; } }
+    #s6 #s6_content #s6-hero {
+      grid-area: s6-image; }
+      #s6 #s6_content #s6-hero > div {
+        height: 144px;
+        width: 144px;
+        background-image: url("../img/section-6/IMG_0301.JPG");
+        background-size: cover;
+        background-position: center;
+        border-radius: 100%;
+        margin: 16px auto 30px; }
+        @media (min-width: 768px) {
+          #s6 #s6_content #s6-hero > div {
+            height: 268px;
+            width: 268px;
+            margin: 15px auto 100px; } }
+        @media (min-width: 992px) {
+          #s6 #s6_content #s6-hero > div {
+            height: 318px;
+            width: 318px; } }
+    #s6 #s6_content #s6-text {
+      grid-area: s6-text; }
     #s6 #s6_content p {
       font-weight: 400;
       font-size: 1rem; }
