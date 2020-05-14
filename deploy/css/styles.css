@@ -548,9 +548,9 @@ header {
     #s2 #s2-content #s2-container #s2-text {
       grid-area: s2-text; }
       #s2 #s2-content #s2-container #s2-text hr {
-        height: 2px;
         background-color: #80B1C0;
-        border: none; }
+        border: none;
+        height: 2px; }
       #s2 #s2-content #s2-container #s2-text h3 {
         color: #482D3D;
         font-size: 1.5rem;
@@ -612,9 +612,9 @@ header {
     #s4 #s4-content #s4-text {
       text-align: center; }
       #s4 #s4-content #s4-text hr {
+        background-color: #80B1C0;
         border: none;
-        height: 2px;
-        background-color: #80B1C0; }
+        height: 2px; }
       #s4 #s4-content #s4-text h2 {
         font-size: 1.5rem;
         font-weight: 800; }

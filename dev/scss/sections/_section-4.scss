@@ -17,10 +17,10 @@
         #s4-text {
             text-align: center;
 
-            hr{
+            hr {
+                background-color: $l-blue;
                 border: none;
                 height: 2px;
-                background-color: $l-blue;
             }
 
             h2 {
