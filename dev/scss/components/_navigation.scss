@@ -34,3 +34,18 @@
         }
     }
 }
+
+#burger-container{
+    
+    i{
+        a:link, a:visited {
+            color: $l-blue;
+            transition: 0.25s;
+        }
+
+        a:hover, a:active{
+            color: $purple;
+        }
+    }
+    
+}

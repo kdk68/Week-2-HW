@@ -16,7 +16,7 @@ header {
 
         @include lg {
             grid-template-areas: "logo nav";
-            grid-template-columns: 20% auto;
+            grid-template-columns: 40% auto;
         }
 
         #logo-container {
