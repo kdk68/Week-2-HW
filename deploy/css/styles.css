@@ -419,7 +419,9 @@ header {
         grid-template-columns: 40% auto; } }
     header > div #logo-container {
       grid-area: logo;
-      padding: 20px; }
+      padding: 0; }
+      header > div #logo-container img {
+        height: 100px; }
     header > div #burger-container {
       align-items: center;
       display: flex;
@@ -445,25 +447,29 @@ header {
 ============= */
 #footer {
   background-color: #80B1C0;
-  text-align: center;
-  padding: 10px; }
+  padding: 10px;
+  text-align: center; }
   #footer ul {
+    align-content: center;
     display: flex;
-    justify-content: center;
-    align-content: center; }
+    justify-content: center; }
     #footer ul li {
       margin: 0px 15px; }
-      #footer ul li a:link, #footer ul li a:visited {
-        font-size: 1.625rem;
+      #footer ul li a:link,
+      #footer ul li a:visited {
         color: #904F6F;
+        font-size: 1.625rem;
         transition: 0.25s; }
         @media (min-width: 768px) {
-          #footer ul li a:link, #footer ul li a:visited {
+          #footer ul li a:link,
+          #footer ul li a:visited {
             font-size: 3.8125rem; } }
         @media (min-width: 992px) {
-          #footer ul li a:link, #footer ul li a:visited {
+          #footer ul li a:link,
+          #footer ul li a:visited {
             font-size: 4.375rem; } }
-      #footer ul li a:hover, #footer ul li a:active {
+      #footer ul li a:hover,
+      #footer ul li a:active {
         color: #482D3D; }
 
 /* =============

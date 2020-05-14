@@ -1,36 +1,36 @@
 /* =============
     Footer
 ============= */
-
-#footer{
-
+#footer {
     background-color: $l-blue;
-    text-align: center;
     padding: 10px;
+    text-align: center;
 
-    ul{
+    ul {
+        align-content: center;
         display: flex;
         justify-content: center;
-        align-content: center;
 
-        li{
+        li {
             margin: 0px 15px;
 
-            a:link, a:visited{
-                font-size: rem-calc(26);
+            a:link,
+            a:visited {
                 color: $l-purple;
+                font-size: rem-calc(26);
                 transition: 0.25s;
-                
-                @include md{
+
+                @include md {
                     font-size: rem-calc(61);
                 }
 
-                @include lg{
+                @include lg {
                     font-size: rem-calc(70);
                 }
             }
 
-            a:hover, a:active{
+            a:hover,
+            a:active {
                 color: $purple;
             }
         }
