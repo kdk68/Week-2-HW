@@ -400,13 +400,6 @@ textarea {
     #nav-container ul li a:active {
       color: #482D3D; }
 
-#burger-container i a:link, #burger-container i a:visited {
-  color: #80B1C0;
-  transition: 0.25s; }
-
-#burger-container i a:hover, #burger-container i a:active {
-  color: #482D3D; }
-
 /* =============
     Header
 ============= */
@@ -439,7 +432,7 @@ header {
       header > div #burger-container i {
         cursor: pointer; }
     header > div #nav-container {
-      background-color: #80B1C0;
+      background-color: #904F6F;
       display: none;
       grid-area: nav;
       padding: 20px; }
