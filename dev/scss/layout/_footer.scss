@@ -1,3 +1,17 @@
 /* =============
     Footer
 ============= */
+
+#footer{
+
+    background-color: $l-blue;
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-areas: ". footer .";
+
+    ul{
+        grid-area: footer;
+        display: flex;
+        justify-content: center;
+    }
+}

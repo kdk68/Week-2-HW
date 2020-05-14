@@ -67,13 +67,34 @@
 
                 h3{
                     color: $purple;
-                }
+                    font-weight: 700;
+                    font-size: rem-calc(24);
+                    text-align: center;
 
-                em{
-                    color: $l-purple;
-                    margin-top: 10px;
+                    @include md{
+                        font-size: rem-calc(32);
+                        text-align: left;
+                    }
 
                     @include lg{
+                        font-size: rem-calc(36);
+                    }
+                }
+
+                p{
+                    color: $l-purple;
+                    margin-top: 10px;
+                    font-weight: 500;
+                    font-size: rem-calc(18);
+                    font-style: italic;
+                    text-align: center;
+
+                    @include md{
+                        font-size: rem-calc(20);
+                        text-align: left;
+                    }
+                    @include lg{
+                        font-size: rem-calc(24);
                         margin-top: 12px;
                     }
                 }

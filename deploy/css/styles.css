@@ -349,6 +349,9 @@ ul {
 /* =============
     Typography
 ============= */
+body {
+  font-family: 'Raleway', sans-serif; }
+
 h1, h2, h3, h4, h5, h6, hr, p, em {
   margin: 0;
   padding: 0; }
@@ -380,6 +383,16 @@ textarea {
 /* =============
     Footer
 ============= */
+#footer {
+  background-color: #80B1C0;
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  grid-template-areas: ". footer ."; }
+  #footer ul {
+    grid-area: footer;
+    display: flex;
+    justify-content: center; }
+
 /* =============
     Section 1
 ============= */
@@ -454,12 +467,31 @@ textarea {
     #s2 #s2-content #s2-container #s2-text {
       grid-area: s2-text; }
       #s2 #s2-content #s2-container #s2-text h3 {
-        color: #482D3D; }
-      #s2 #s2-content #s2-container #s2-text em {
-        color: #904F6F;
-        margin-top: 10px; }
+        color: #482D3D;
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-align: center; }
+        @media (min-width: 768px) {
+          #s2 #s2-content #s2-container #s2-text h3 {
+            font-size: 2rem;
+            text-align: left; } }
         @media (min-width: 992px) {
-          #s2 #s2-content #s2-container #s2-text em {
+          #s2 #s2-content #s2-container #s2-text h3 {
+            font-size: 2.25rem; } }
+      #s2 #s2-content #s2-container #s2-text p {
+        color: #904F6F;
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 1.125rem;
+        font-style: italic;
+        text-align: center; }
+        @media (min-width: 768px) {
+          #s2 #s2-content #s2-container #s2-text p {
+            font-size: 1.25rem;
+            text-align: left; } }
+        @media (min-width: 992px) {
+          #s2 #s2-content #s2-container #s2-text p {
+            font-size: 1.5rem;
             margin-top: 12px; } }
 /* =============
     Section 3
@@ -492,7 +524,14 @@ textarea {
   #s4 #s4-content {
     grid-area: section-4;
     color: #482D3D; }
-
+    #s4 #s4-content #s4-text {
+      text-align: center; }
+      #s4 #s4-content #s4-text h2 {
+        font-weight: 800;
+        font-size: 1.5rem; }
+        @media (min-width: 768px) {
+          #s4 #s4-content #s4-text h2 {
+            font-size: 3.75rem; } }
 /* =============
     Section 5
 ============= */
@@ -548,14 +587,12 @@ textarea {
   #s6 #s6_content {
     grid-area: section-6;
     color: #904F6F; }
-
-/* =============
-    Footer
-============= */
-#footer {
-  background-color: #80B1C0;
-  display: grid;
-  grid-template-columns: 20px auto 20px;
-  grid-template-areas: ". footer ."; }
-  #footer ul {
-    grid-area: footer; }
+    #s6 #s6_content p {
+      font-weight: 400;
+      font-size: 1rem; }
+      @media (min-width: 768px) {
+        #s6 #s6_content p {
+          font-size: 1.25rem; } }
+      @media (min-width: 992px) {
+        #s6 #s6_content p {
+          font-size: 1.3125rem; } }
